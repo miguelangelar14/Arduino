@@ -4,6 +4,14 @@ int a;
 int R=11;
 int G=10;
 int B=9;
+
+int R2=8;
+int G2=7;
+int B2=6;
+
+int Rel=5;
+int Rel2=3;
+
 void setup() {
   pinMode(R,OUTPUT);
   pinMode(G,OUTPUT);
@@ -192,6 +200,7 @@ void loop() {
     delay(1);
   }
   delay(3000);
+  //This part was finished on Saturday, 1st July. (1 LED version)
   //Lion kingÂ´s circle of life
   for(i=0; i<256; i++){
     analogWrite(B,i);
