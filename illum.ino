@@ -19,7 +19,10 @@ void setup() {
 }
 
 void loop() {
-  //A Dream is a wish
+dreamwish();
+circleoflife();
+}
+void dreamwish(){  //A Dream is a wish
   digitalWrite(B,HIGH);
   delay(5100);
   digitalWrite(B,LOW);
@@ -201,7 +204,9 @@ void loop() {
   }
   delay(3000);
   //This part was finished on Saturday, 1st July. (1 LED version)
-  //Lion kingÂ´s circle of life
+}
+
+void circleoflife(){ //Lion kingÂ´s circle of life
   for(i=0; i<256; i++){
     analogWrite(B,i);
     delay(10);
