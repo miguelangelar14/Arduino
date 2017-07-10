@@ -49,11 +49,13 @@ void loop() {
   digitalWrite(R,LOW);
   digitalWrite(G,LOW);
   delay(1285);
-  analogWrite(G,64);
-  digitalWrite(R,HIGH);
+  analogWrite(R,128);
+  analogWrite(G,36);
+  analogWrite(B,214);
   delay(2550);
   digitalWrite(R,LOW);
   digitalWrite(G,LOW);
+  digitalWrite(B,LOW);
   delay(1285);
   analogWrite(G,64);
   digitalWrite(R,HIGH);
