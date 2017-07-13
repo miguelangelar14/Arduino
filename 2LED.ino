@@ -24,6 +24,7 @@ void setup() {
 void loop() {
 dreamwish();
 circleoflife();
+//feelthelove();
 }
 void dreamwish(){  //A Dream is a wish
   digitalWrite(B,HIGH);
@@ -69,21 +70,33 @@ void dreamwish(){  //A Dream is a wish
   delay(5500);
   analogWrite(G2,64);
   digitalWrite(R2,HIGH);
+  digitalWrite(B,HIGH);
+  analogWrite(R,100);
   delay(2550);
   digitalWrite(R2,LOW);
   digitalWrite(G2,LOW);
+  digitalWrite(B,LOW);
+  digitalWrite(R,LOW);
   delay(1285);
   digitalWrite(R,HIGH);
   analogWrite(G,64);
+  digitalWrite(B2,HIGH);
+  analogWrite(R2,100);
   delay(2550);
   digitalWrite(R,LOW);
   digitalWrite(G,LOW);
+  digitalWrite(B2,LOW);
+  digitalWrite(R2,LOW);
   delay(1285);
   analogWrite(G2,64);
   digitalWrite(R2,HIGH);
+  digitalWrite(B,HIGH);
+  analogWrite(R,100);
   delay(2550);
   digitalWrite(R2,LOW);
   digitalWrite(G2,LOW);
+  digitalWrite(B,LOW);
+  digitalWrite(R,LOW);
   delay(4275);
   for(i=0; i<256; i++){
     analogWrite(B,i);
@@ -166,13 +179,11 @@ void dreamwish(){  //A Dream is a wish
   delay(800);
   digitalWrite(R2,LOW);
   delay(700);
-  digitalWrite(G2,HIGH);
   digitalWrite(R2,HIGH);
   delay(275);
   digitalWrite(G,HIGH);
   delay(500);
   digitalWrite(G,LOW);
-  digitalWrite(G2,LOW);
   digitalWrite(R2,LOW);
   delay(500);
   digitalWrite(G,HIGH);
@@ -278,57 +289,76 @@ void dreamwish(){  //A Dream is a wish
   }
   delay(3000);
   //This part was finished on Saturday, 1st July. (1 LED version)
+  //2nd LED version finished on Wenesday, 12th of July.
 }
 
 void circleoflife(){ //Lion king's circle of life
   for(i=0; i<256; i++){
     analogWrite(B,i);
+    analogWrite(B2,i);
     delay(10);
   }
-  delay(5300);
+  delay(5800);
   digitalWrite(B,LOW);
+  digitalWrite(B2,LOW);
   digitalWrite(R,HIGH);
-  delay(2200);
+  digitalWrite(R2,HIGH);
+  delay(2600);
   digitalWrite(R,LOW);
+  digitalWrite(R2,LOW);
   digitalWrite(B,HIGH);
-  delay(2200);
+  digitalWrite(B2,HIGH);
+  delay(2600);
   digitalWrite(B,LOW);
+  digitalWrite(B2,LOW);
   digitalWrite(R,HIGH);
-  delay(3000);
+  digitalWrite(R2,HIGH);
+  delay(3400);
   digitalWrite(R,LOW);
+  digitalWrite(R2,LOW);
   digitalWrite(B,HIGH);
-  delay(2000);
+  digitalWrite(B2,HIGH);
+  delay(2400);
   digitalWrite(B,LOW);
+  digitalWrite(B2,LOW);
   digitalWrite(R,HIGH);
+  digitalWrite(R2,HIGH);
   delay(5500);
   digitalWrite(R,LOW);
+  digitalWrite(R2,LOW);
   for(i=0; i<256; i++){
     analogWrite(G,i);
+    analogWrite(G2,i);
     delay(10);
   }
   delay(17400);
   for(i=255; i>100; i--){
     analogWrite(G,i);
+    analogWrite(G2,i);
     delay(13);
   }
   for(i=0; i<256; i++){
     analogWrite(B,i);
+    analogWrite(B2,i);
     delay(10);
   }
   for(i=99; i>-1; i--){
     analogWrite(G,i);
+    analogWrite(G2,i);
     delay(5);
   }
-  delay(31500);
-  for(i=0; i<256; i++){
-    analogWrite(R,i);
+  delay(36000);
+}
+void feelthelove(){ //Lion King's Can you feel the love?
+  for(i=255; i>5; i--){
+    analogWrite(B,i);
+    analogWrite(B2,i);
     delay(10);
   }
-    digitalWrite(B,LOW);
-  for(i=0; i<90; i++){
-    analogWrite(G,i);
-    delay(5);
+  delay(15650);
+  for(i=5; i<256; i++){
+    analogWrite(B,i);
+    analogWrite(B2,i);
+    delay(10);
   }
-  digitalWrite(G,LOW);
-  delay(1000);
 }
