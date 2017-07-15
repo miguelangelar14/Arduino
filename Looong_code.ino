@@ -449,13 +449,13 @@ void partofyourworld(){ //The little Mermaid's Part of your World
   delay(500);
   digitalWrite(B,LOW);
   digitalWrite(B2,LOW);
-  delay(500);
+  delay(1000);
   digitalWrite(B,HIGH);
   digitalWrite(B2,HIGH);
   delay(500);
   digitalWrite(B,LOW);
   digitalWrite(B2,LOW);
-  delay(500);
+  delay(1000);
   digitalWrite(B,HIGH);
   digitalWrite(B2,HIGH);
   delay(500);
